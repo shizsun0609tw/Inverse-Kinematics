@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1d49c9d3-4264-416b-8008-496d8e8c03d9}</ProjectGuid>
+    <RootNamespace>InverseKinematics</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)extern\glad\include;$(SolutionDir)extern\stb\include;$(SolutionDir)extern\imgui\include;$(SolutionDir)extern\glfw\include;$(SolutionDir)extern\eigen\include;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)extern\glfw\lib;$(SolutionDir)extern\FK_Helper\MSVC;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLFW_INCLUDE_NONE;IMGUI_IMPL_OPENGL_LOADER_GLAD2;EIGEN_MPL2_ONLY;EIGEN_NO_DEBUG;EIGEN_DONT_PARALLELIZE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4551</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;FK_Helper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\extern\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\extern\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\extern\imgui\src\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\extern\imgui\src\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\extern\imgui\src\imgui_tables.cpp" />
+    <ClCompile Include="..\extern\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\src\acclaim\motion.cpp" />
+    <ClCompile Include="..\src\acclaim\posture.cpp" />
+    <ClCompile Include="..\src\acclaim\skeleton.cpp" />
+    <ClCompile Include="..\src\graphics\box.cpp" />
+    <ClCompile Include="..\src\graphics\camera.cpp" />
+    <ClCompile Include="..\src\graphics\cylinder.cpp" />
+    <ClCompile Include="..\src\graphics\default_camera.cpp" />
+    <ClCompile Include="..\src\graphics\free_camera.cpp" />
+    <ClCompile Include="..\src\graphics\plane.cpp" />
+    <ClCompile Include="..\src\graphics\rigidbody.cpp" />
+    <ClCompile Include="..\src\graphics\shader.cpp" />
+    <ClCompile Include="..\src\graphics\sphere.cpp" />
+    <ClCompile Include="..\src\graphics\texture.cpp" />
+    <ClCompile Include="..\src\simulation\ball.cpp" />
+    <ClCompile Include="..\src\simulation\kinematics.cpp" />
+    <ClCompile Include="..\src\util\filesystem.cpp" />
+    <ClCompile Include="..\src\util\helper.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\assets\Shader\render.frag" />
+    <None Include="..\assets\Shader\render.vert" />
+    <None Include="..\assets\Shader\shadow.frag" />
+    <None Include="..\assets\Shader\shadow.vert" />
+    <None Include="..\assets\Shader\skybox.frag" />
+    <None Include="..\assets\Shader\skybox.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\extern\glad\include\glad\gl.h" />
+    <ClInclude Include="..\extern\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\extern\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="..\extern\imgui\include\imconfig.h" />
+    <ClInclude Include="..\extern\imgui\include\imgui.h" />
+    <ClInclude Include="..\extern\imgui\include\imgui_impl_glfw.h" />
+    <ClInclude Include="..\extern\imgui\include\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\extern\stb\include\stb_image.h" />
+    <ClInclude Include="..\include\acclaim\bone.h" />
+    <ClInclude Include="..\include\acclaim\motion.h" />
+    <ClInclude Include="..\include\acclaim\posture.h" />
+    <ClInclude Include="..\include\acclaim\skeleton.h" />
+    <ClInclude Include="..\include\graphics\box.h" />
+    <ClInclude Include="..\include\graphics\buffer.h" />
+    <ClInclude Include="..\include\graphics\camera.h" />
+    <ClInclude Include="..\include\graphics\configs.h" />
+    <ClInclude Include="..\include\graphics\cylinder.h" />
+    <ClInclude Include="..\include\graphics\default_camera.h" />
+    <ClInclude Include="..\include\graphics\free_camera.h" />
+    <ClInclude Include="..\include\graphics\plane.h" />
+    <ClInclude Include="..\include\graphics\rigidbody.h" />
+    <ClInclude Include="..\include\graphics\shader.h" />
+    <ClInclude Include="..\include\graphics\sphere.h" />
+    <ClInclude Include="..\include\graphics\texture.h" />
+    <ClInclude Include="..\include\simulation\ball.h" />
+    <ClInclude Include="..\include\simulation\kinematics.h" />
+    <ClInclude Include="..\include\util\filesystem.h" />
+    <ClInclude Include="..\include\util\helper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

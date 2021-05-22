@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InverseKinematics", "InverseKinematics\InverseKinematics.vcxproj", "{1D49C9D3-4264-416B-8008-496D8E8C03D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D49C9D3-4264-416B-8008-496D8E8C03D9}.Release|x64.ActiveCfg = Release|x64
+		{1D49C9D3-4264-416B-8008-496D8E8C03D9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A930842-ED8D-4478-9EC9-549BF697B66A}
+	EndGlobalSection
+EndGlobal

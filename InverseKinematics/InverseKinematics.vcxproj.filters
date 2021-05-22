@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="來源檔案\acclaim">
+      <UniqueIdentifier>{f47ee79f-888f-4ab9-a2fe-3ae9b490fd6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\graphics">
+      <UniqueIdentifier>{523e154e-b091-4fc0-ba66-b107bfd9b2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\util">
+      <UniqueIdentifier>{dec931d3-45b0-4033-b416-30850a67395b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\simulation">
+      <UniqueIdentifier>{9c5c23e5-4861-41d4-801d-93a6353f903f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="著色器">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="標頭檔\acclaim">
+      <UniqueIdentifier>{0fd1eefd-dac5-4410-b4ad-107d015c9b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\graphics">
+      <UniqueIdentifier>{b1beb0b8-eff9-4863-9325-db5d708205f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\util">
+      <UniqueIdentifier>{ea5cf800-8fba-4c2f-8343-9ff336a87c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\simulation">
+      <UniqueIdentifier>{0dfeaea1-dbf9-41f3-b3a7-2f0b5219528d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\extern">
+      <UniqueIdentifier>{33036f4b-af43-45b7-b179-426e527cfde8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="來源檔案\extern\imgui">
+      <UniqueIdentifier>{eaef1e71-99aa-4055-9364-f6fddc1d2755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\extern">
+      <UniqueIdentifier>{62f55647-e494-4012-875d-b64bf7814304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\extern\imgui">
+      <UniqueIdentifier>{3049904f-8c45-4b6a-9cc3-11e7723fc6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\extern\glad">
+      <UniqueIdentifier>{3c4c4f5c-890c-4cb8-9002-0144818ed91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\extern\glfw">
+      <UniqueIdentifier>{15442806-e39a-4df8-b3fe-45698270f963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\extern\stb">
+      <UniqueIdentifier>{c6dd822e-ac2d-43e7-8d8c-6f8af40ba953}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\acclaim\motion.cpp">
+      <Filter>來源檔案\acclaim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\acclaim\posture.cpp">
+      <Filter>來源檔案\acclaim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\acclaim\skeleton.cpp">
+      <Filter>來源檔案\acclaim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\box.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\camera.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\cylinder.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\default_camera.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\free_camera.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\plane.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\rigidbody.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\shader.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\sphere.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\texture.cpp">
+      <Filter>來源檔案\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\filesystem.cpp">
+      <Filter>來源檔案\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\helper.cpp">
+      <Filter>來源檔案\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\simulation\ball.cpp">
+      <Filter>來源檔案\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\simulation\kinematics.cpp">
+      <Filter>來源檔案\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui_draw.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui_impl_glfw.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui_impl_opengl3.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui_tables.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extern\imgui\src\imgui_widgets.cpp">
+      <Filter>來源檔案\extern\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\assets\Shader\render.frag">
+      <Filter>著色器</Filter>
+    </None>
+    <None Include="..\assets\Shader\render.vert">
+      <Filter>著色器</Filter>
+    </None>
+    <None Include="..\assets\Shader\shadow.frag">
+      <Filter>著色器</Filter>
+    </None>
+    <None Include="..\assets\Shader\shadow.vert">
+      <Filter>著色器</Filter>
+    </None>
+    <None Include="..\assets\Shader\skybox.frag">
+      <Filter>著色器</Filter>
+    </None>
+    <None Include="..\assets\Shader\skybox.vert">
+      <Filter>著色器</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\acclaim\bone.h">
+      <Filter>標頭檔\acclaim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\acclaim\motion.h">
+      <Filter>標頭檔\acclaim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\acclaim\posture.h">
+      <Filter>標頭檔\acclaim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\acclaim\skeleton.h">
+      <Filter>標頭檔\acclaim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\box.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\buffer.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\camera.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\configs.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\cylinder.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\default_camera.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\free_camera.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\plane.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\rigidbody.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\shader.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\sphere.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\texture.h">
+      <Filter>標頭檔\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\simulation\ball.h">
+      <Filter>標頭檔\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\simulation\kinematics.h">
+      <Filter>標頭檔\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\filesystem.h">
+      <Filter>標頭檔\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\util\helper.h">
+      <Filter>標頭檔\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\imgui\include\imconfig.h">
+      <Filter>標頭檔\extern\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\imgui\include\imgui.h">
+      <Filter>標頭檔\extern\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\imgui\include\imgui_impl_glfw.h">
+      <Filter>標頭檔\extern\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\imgui\include\imgui_impl_opengl3.h">
+      <Filter>標頭檔\extern\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\glad\include\glad\gl.h">
+      <Filter>標頭檔\extern\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\glfw\include\GLFW\glfw3.h">
+      <Filter>標頭檔\extern\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\glfw\include\GLFW\glfw3native.h">
+      <Filter>標頭檔\extern\glfw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\stb\include\stb_image.h">
+      <Filter>標頭檔\extern\stb</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
